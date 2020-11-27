@@ -23,11 +23,11 @@ func main() {
 	}
 	err = DB.DbInitCurrency(db)
 	if err != nil {
-		log.Fatal("error 2 ", err)
+		fmt.Println("error 2 ", err)
 	}
 	err = DB.DbInitAccaunts(db)
 	if err != nil {
-		log.Fatal("error 3", err)
+		fmt.Println("error 3", err)
 	}
 	//err = DB.DBInsert(db)
 	//if err != nil {
