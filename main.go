@@ -44,12 +44,12 @@ func main() {
 	}
 	err = DB.AddNewClient(db, user)
 	if err!= nil {
-		log.Fatal("error ", err)
+		fmt.Println("error ", err)
 	}
 
 	err = DB.UpdateUsers(db)
 		if err != nil{
-			log.Fatal("error in updating, bro", err)
+			fmt.Println("error in updating, bro", err)
 		}
 
 		accaunt := moduls.Accaunts{
@@ -60,7 +60,7 @@ func main() {
 		}
 	err = DB.AddNewAccaunt(db, accaunt)
 	if err != nil{
-		log.Fatal(`error while adding accaunt`, err)
+		fmt.Println(`error while adding accaunt`, err)
 	}
 }
 
